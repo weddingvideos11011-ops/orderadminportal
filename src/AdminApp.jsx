@@ -50,7 +50,7 @@ function Login({ onLogin }) {
         <div className="login-icon"><ShieldCheck size={22} /></div>
         <p className="kicker">Admin access</p>
         <h2>Sign in to your portal</h2>
-        <p className="login-hint">Use the admin user ID and password configured on the Express server.</p>
+        <p className="login-hint">Use the admin user ID and password to sign in.</p>
         <form onSubmit={async (event) => {
           event.preventDefault()
           setBusy(true)
@@ -73,7 +73,7 @@ function Login({ onLogin }) {
           {error && <p className="notice error-notice">{error}</p>}
           <button className="primary-button" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'} <ArrowUpRight size={16} /></button>
         </form>
-        <p className="secure-note"><ShieldCheck size={14} /> Credentials are checked by the Express API and never stored in this app.</p>
+        
       </div>
     </section>
   </main>
