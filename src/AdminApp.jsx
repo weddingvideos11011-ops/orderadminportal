@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Archive, ArrowDownRight, ArrowUpRight, Boxes, Check, CircleUserRound, ClipboardList, LayoutDashboard, LogOut, Mail, PackagePlus, Plus, RefreshCw, Search, ShieldCheck, Tag, Trash2, Truck, X } from 'lucide-react'
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001/api'
+const API_BASE = import.meta.env.VITE_API_URL || 'https://orderbackend-beta.vercel.app/api'
 const tabs = [
   { id: 'overview', label: 'Overview', icon: LayoutDashboard },
   { id: 'products', label: 'Products', icon: Boxes },
